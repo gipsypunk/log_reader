@@ -44,7 +44,7 @@ class Parser:
 
     def get_id(self, x):
         start = x.find(",_ID:_") + 7
-        end = x.rfind(",") - 1
+        end = x.rfind(",_T") - 1
         result = x[start:end]
         return result
 
