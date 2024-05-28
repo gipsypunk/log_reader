@@ -50,7 +50,7 @@ class Parser:
 
     def get_data(self):
         data = []
-        with open(self.log_path, 'r', encoding="cp866") as file:
+        with open(self.log_path, 'r') as file:
             content = file.readlines()
         for i in content:
             line = i.split()
